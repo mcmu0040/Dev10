@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Truck, Truck, Gray Truck Food Truck Contact Us Page</title>
+		<link href="restaurantStyles.css" rel="stylesheet" type="text/css" />
+		
+		<!--BootStrap Links-->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		
+		<style>
+			input[type=text] {
+				background-color: 		#d5d2cb;
+				color: black;
+				border:		2px	solid	#292533;
+				width:		250px;
+				padding:	12px	20px;
+				margin:		8px 0;
+				box-sizing:	border-box;
+			}
+
+			fieldset {
+				background-color: #d5d2cb;
+				width: 100%;
+				padding: 12px 20px;
+				margin: 8px 0;
+				box-sizing:	border-box;
+			}
+
+			input {
+				font-size: 16px;
+				font-family: Arial, Helvetica, serif;
+				font-weight: bold;
+			}
+
+			label {
+				font-size: 16px;
+				font-family: Arial, Helvetica, serif;
+			}
+
+			legend {
+				font-size: 16px;
+				font-family:	Arial, Helvetica, serif;
+				font-weight: bold;
+			}
+
+			select {
+				background-color:	#d5d2cb;
+				width:	200px;
+				padding:	12px 20px;
+				margin:	8px 0;
+				box-sizing:	border-box;
+			}
+
+			textarea {
+				width: 100%;
+				height: 200px;
+				padding: 12px 20px;
+				margin: 8px 0;
+				box-sizing: border-box;
+				border: 3px solid #44749d;
+				border-radius: 3px;
+				background-color: #d5d2cb;
+				resize: none;
+			}
+
+			input, submit{
+				background-color: #8c2238;
+				border: none;
+				color: white;
+				padding: 12px 20px;
+				text-align: center;
+				text-decoration: none;
+				display: inline-block;
+				font-size: 16px;
+			}
+
+			#main {
+				padding: 10px;
+			}
+		</style>
+	</head>
+	<body id="myBody">
+		<div id="title">
+			<center><h1 class="title">Truck Truck Gray Truck <br /><br />
+			Food Truck</h1></center>
+		</div>
+		<div class="jumbotron">
+			<h2 class="jumbo">Now Serving NEW Areas</h2> 
+			<p>Now that we have the Minneapolis market on lock, once we get another truck working we'll be coming to downtown Saint Paul, right next to the fire station. Why there? Because our food is so hot(dish)!</p> 
+		</div>
+		<div id="navigation">
+		<hr class="lineBreak" />
+<!--The links we'll need are : index.html, menu.html, and contact.html -->
+			<p><ul class="nav nav-pills">
+				<li><a href="index.html"><img src="images/home.png"></a></li>   
+				<li><a class="myLink" href="menu.html">Menu</a></li>    
+				<li class="active"><a class="myLink" href="contact.html">Contact Us</a></li>
+			</ul></p>
+		<hr class="lineBreak" />
+		</div>
+		<div id="main">
+		<h2>Contact Us</h2>
+		<form action="submit.html" method="POST">
+			<label for="name" style="font-weight:bold">Name:</label>
+			<input type="text" id="name" name="name"><br /><br />
+			<label for="email">Email:</label>
+			<input type="text" id="email" name="email"><br /><br />
+			<label for="phone" style="font-weight:bold">Phone:</label>
+			<input type="text" id="phone" name="phone">
+			<br /><br />
+			<label for="contact">Reason for Inquiry:</label>
+			<select id="contact" name="contact">
+				<option value="corporateParty">Corporate Party</option>
+				<option value="specialEvent">Special Event</option>
+				<option value="Lunch" selected>Lunch</option>
+				<option value="parole">Parole Hearing</option>
+				<option value="moviePremier">Movie Premier</option>
+				<option value="justToTalk">It's late and I just want to talk</option>
+			</select>
+			<br /><br />
+			<label for="info">Additional Information:</label>
+			<textarea id="info"></textarea>
+			<br /><br />
+			<label for="visit">Have you visited Truck, Truck, Gray Truck before?</label>
+			<input type="radio" id="choice1" name="visit" value="no" checked><label for="choice2">No</label>
+			<input type="radio" id="choice2" name="visit" value="yes"><label for="choice1">Yes</label>
+			<br /><br />
+			<label for="days">Best days to contact you:</label>
+			<input type="checkbox" id="monday" name="days" value="monday"><label for="monday">M</label>
+			<input type="checkbox" id="tuesday" name="days" value="tuesday"><label for="tuesday">T</label>
+			<input type="checkbox" id="wednesday" name="days" value="wednesday"><label for="wednesday">W</label>
+			<input type="checkbox" id="thursday" name="days" value="thursdayday"><label for="thursdayday">Th</label>
+			<input type="checkbox" id="friday" name="days" value="friday"><label for="friday">F</label>
+			<br /><br />
+			<center><input type="submit" name="submit" value="Send Request"></center>
+		</form>
+		
+		</div> <!--Closes main-->
+		<div id="footer">
+		<hr class="lineBreak" />
+			<footer>
+				<center>
+				<p>P.O. Box 12345 Luggage Combo Ln, Hudson, WI, 99999</p>
+				<p>(555) 867-5309</p>
+				</center>
+				<p>&copy; 2018 Sean McMullen</p>
+				<p><a class="myLink" href="https://www.thesoftwareguild.com" target ="_blank">The Software Guild</a></p>
+			</footer>
+		</div>
+	</body>
+</html>

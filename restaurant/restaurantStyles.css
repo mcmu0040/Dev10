@@ -1,0 +1,86 @@
+/* Common elements across all pages for Portfolio */
+
+/* Test to store BootStrap links int he style sheet. Need to have these links ontop of all the pages.
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  */*/
+ 
+/*Using BootStrap overrode this style sheet. Adding id="myBody" allowed me to use an external sheet again. Keeping below code for legacy and error ident. If colors come up red or there is more Comic Sans, I know something changed*/
+body {
+	font-family: Comic Sans MS;
+	background-color: red;
+	color: red;
+}
+
+#myBody {
+	font-family: Arial, Helvetica, sans-serif;
+	background-color: #f2f0ec;
+	color: black;
+}
+			
+div.jumbotron {
+	background-color: #a0c1b8;
+	padding: 30px;
+}
+			
+/*adding classes to most of my elements. Seems bootstrap has taken over most of my elements and using classes to override back to enable control form the style sheet.*/
+
+@font-face {
+	font-family: actionJ;
+	src: url(fonts/actionj.ttf)
+}
+
+@font-face {
+				font-family: menuFont;
+				src: url(fonts/Amada.ttf)
+			}
+
+h1.title {
+	font-size: 50px;
+	line-height: 40px;
+	color: #5b7d87;
+	font-family: actionJ;
+	text-shadow: 1px 1px 5px gray; /*Horz Vert BLUR Color*/
+}
+
+h2.jumbo {
+	font-size: 60px;
+	color: #e5dace;
+}
+
+hr.lineBreak {
+	border-top: 3px dashed #5b7d87;
+	border-bottom: 3px solid #5b7d87;
+}
+
+h2 { 
+	font-size: 14px;
+	line-height: 40px;
+	color: #5b7d87;
+}
+
+a.myLink {
+	font-family: serif;
+	text-decoration: underline;
+	font-weight: none;
+}
+
+a.myLink:link {
+	color: black;
+}
+
+a.myLink:visited {
+	color: blue;
+}
+
+a.myLink:hover {
+	color: #5b7d87;
+	font-weight: bold;
+}
+
+a.myLink:active {
+	color: gray;
+	text-decoration: none;
+}

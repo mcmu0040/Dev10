@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Lucky Sevens</title>
+	<style>
+		table, tr, td {
+			border: 1px solid black;
+		}
+		
+		#results {
+			padding: 15px;
+		}
+	</style>
+	<script type="text/javascript" src="luckySevens.js"></script>
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+<center>
+<div class="container">
+	<h1 class="title">Lucky Sevens</h1>
+	<form name="inputForm" onsubmit="return playGame();" class="form-inline">
+		<div class="form-group">
+			<label for="startingBet">Starting Bet:</label>
+            <input type="number" class="form-control" id="startingBet" style="width:100px;">
+        </div>
+		<br />
+		<br />
+		<button type="submit" id="submitButton" class="btn btn-default">Play</button>
+	</form>
+</div>	
+
+<div id="results" style="display:none;">
+	<br />
+	<h2>Results</h2>
+	<br />
+	<table class"resultsTable">
+		<tr>
+			<td>Starting Bet</td>
+			<td><span id="startBet"></span></td>
+		</tr>
+		<tr>
+			<td>Total Rolls Before Going Broke</td>
+			<td><span id="numRolls"></span></td>
+		</tr>
+		<tr>
+			<td>Highest Amount Won</td>
+			<td id="mostWon"><script>document.getElementById("mostWon").innerHTML = ("$" + (5 + 10));</script></td>
+		</tr>
+		<tr>
+			<td>Roll Count at Hightest Amount Won</td>
+			<td id="mostRolls"><script>document.getElementById("mostRolls").innerHTML = 20;</script></td>
+		</tr>
+	</table>
+</div>
+</center>
+</body>
+</html>
